@@ -14,7 +14,6 @@
 
 
 .grid{
-    /* border: 1px solid black; */
     background-color: aquamarine;
 }
 
@@ -22,30 +21,27 @@
     grid-row:1 / 4 ;
     line-height: 40px;
     background-color: #35a7ff;
-    
 }
 
 .sidebarContainer ul{
     width: 100%;
     background-color: rgba(0, 0, 255, 0.089);
-    /* border: 1px solid white; */
-
 }
 
 .sidebarContainer li{
     display: flex;
     border: 0.1px solid rgba(255, 255, 255, 0.200);
     margin: 5px;
-    /* border: 1px solid black; */
-    /* width: 100%; */
+}
+
+.sidebarContainer li:hover{
+    scale: 1.02;
 }
 
 .sidebarContainer i{
     font-size: 30px;
     padding: 10px;
-    color: blueviolet;
-    /* -webkit-text-stroke: 1px white; */
-    
+    color: rgb(4, 3, 77);
 }
 
 .sidebarContainer li i{
@@ -61,7 +57,7 @@
 
 .sidebarSection1{
     display: flex;
-    margin: 20px 0 0 0;
+    margin: 10px 0 0 0;
     line-height: 50px;
 }
 
@@ -70,7 +66,6 @@
     margin: 20px 0 0 0;
     padding: 10px;
     gap: 10px;
-    
 }
 
 .sidebarSection3{
@@ -101,8 +96,7 @@
 
 .navSection1 input{
     height: 30px;
-    width: 500px;
-    /* border-radius: 20px; */
+    width: 30rem;
     outline: none;
     border: none;
     border-bottom: 1.5px solid white;
@@ -119,7 +113,6 @@
 
 .navSection2{
     display: flex;
-    /* border: 1px solid black; */
     align-items: center;
     justify-content: space-evenly;
     width: 25%;
@@ -137,11 +130,71 @@
     height: 45px;
     width: 45px;
     border-radius: 50%;
-    border: 2px solid #35a7ff; 
+    border: 2px solid white; 
 }
 
 .navSection2 p{
     font-size: 16px;
     color: white;
     font-weight: 500;
+}
+
+.headerContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    /* background-color: rgb(228, 228, 228); */
+    background-color: white;
+    color: #38618c;
+}
+
+.headerSection1{
+    display: flex;
+}
+
+.headerSection1 .headerPfp{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-image: url("profilePic.jpg");
+    background-size: cover;
+    border: 2px solid #35a7ff;
+}
+
+.headerSection1 .headerMsg{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.headerSection1 .hi{
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.headerSection1 .headerUname{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.headerSection2 button{
+    width: 150px;
+    height: 45px;
+    border-radius: 30px;
+    border: none;
+    background-color: #35a7ff;
+    margin-right: 20px;
+    font-size: 16px;
+    color: white;
+    font-weight: 600;
+}
+
+.headerSection2 button:hover{
+    scale: 1.05;
+}
+
+.mainContainer{
+    /* background-color: white; */
+    background-color: rgb(228, 228, 228);
 }
