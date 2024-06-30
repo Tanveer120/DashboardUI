@@ -263,9 +263,6 @@ body{
     scale: 1;
 }
 
-.grid3Child{
-    
-}
 
 .announcement{
     grid-row-start: 1;
@@ -311,5 +308,17 @@ body{
 
 .announcementChild{
     border-bottom: 1px solid #35a7ff;
-    /* background-color: #35a7ff; */
+    padding-top: 10px;
+}
+
+.announcementChild:hover{
+    scale: 1.01;
+}
+
+.announcementChild h1{
+    font-size: 10px;
+}
+
+.announcementChild p{
+    font-size: 8px;
 }
