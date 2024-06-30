@@ -3,6 +3,11 @@
     padding: 0;
     margin: 0;
     font-family: "poppins";
+    
+}
+
+body{
+    background-color: #35a7ff;
 }
 
 .gridContainer{
@@ -79,7 +84,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #38618c;
+    /* background-color: #38618c; */
+    /* background-color: #35a7ff; */
+    background-color: rgba(0, 0, 255, 0.089);
 }
 
 .navSection1{
@@ -143,8 +150,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px;
-    /* background-color: rgb(228, 228, 228); */
+    padding: 5px;
     background-color: white;
     color: #38618c;
 }
@@ -195,6 +201,115 @@
 }
 
 .mainContainer{
-    /* background-color: white; */
     background-color: rgb(228, 228, 228);
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 0.75fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.mainConGrid{
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2), 0 0 10px rgba(0, 0, 0, 0.2); ;
+    color: black;
+    display: grid;
+    grid-template-columns: 1fr 20fr;
+    grid-template-rows: 1fr;
+}
+
+.strip{
+    background-color: #35a7ff;
+    height: 100%;
+    width: 10px;
+    border: none;   
+}
+
+.mainConGrid h1{
+    font-size: 18px;
+}
+
+.mainConGrid p{
+    font-size: 14px;
+}
+
+.cardContent{
+    padding: 10px;
+}
+
+.mainGrid3{
+    grid-row-start: 1;
+    grid-row-end: 4;
+    grid-column-start: 3;
+    grid-row-end: 4;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 40px;
+    align-content: space-between;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    background-color: transparent;
+}
+
+.mainConGrid:hover{
+    scale: 1.01;
+}
+
+.mainGrid3:hover{
+    scale: 1;
+}
+
+.grid3Child{
+    
+}
+
+.announcement{
+    grid-row-start: 1;
+    grid-row-end: 2.5;
+    margin-top: 30px;
+    display: grid;
+    grid-template-rows: 0fr 1fr 1fr 1fr;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: white;
+    
+}
+
+.announcement:before{
+    font-weight: 700;
+    content: "Announcements";
+    position:relative;
+    margin-top: -40px;
+}
+
+.trending{
+    display: grid;
+    grid-template-rows: 0fr 1fr 1fr 1fr 1fr;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: white;
+    
+}
+
+.trendingChild{
+    border-bottom: 1px solid #35a7ff;
+    /* background-color: #35a7ff; */
+}
+
+.trending:before{
+    font-weight: 700;
+    content: "Trending";
+    position: relative;
+    margin-top: -40px;
+}
+
+.announcementChild{
+    border-bottom: 1px solid #35a7ff;
+    /* background-color: #35a7ff; */
 }
