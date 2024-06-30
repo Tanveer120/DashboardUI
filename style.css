@@ -163,7 +163,7 @@ body{
     height: 60px;
     width: 60px;
     border-radius: 50%;
-    background-image: url("profilePic.jpg");
+    background-image: url("pfp5.png");
     background-size: cover;
     border: 2px solid #35a7ff;
 }
@@ -284,28 +284,6 @@ body{
     margin-top: -40px;
 }
 
-.trending{
-    display: grid;
-    grid-template-rows: 0fr 1fr 1fr 1fr 1fr;
-    border: none;
-    padding: 10px;
-    border-radius: 10px;
-    background-color: white;
-    
-}
-
-.trendingChild{
-    border-bottom: 1px solid #35a7ff;
-    /* background-color: #35a7ff; */
-}
-
-.trending:before{
-    font-weight: 700;
-    content: "Trending";
-    position: relative;
-    margin-top: -40px;
-}
-
 .announcementChild{
     border-bottom: 1px solid #35a7ff;
     padding-top: 10px;
@@ -321,4 +299,64 @@ body{
 
 .announcementChild p{
     font-size: 8px;
+}
+
+.trending{
+    display: grid;
+    grid-template-rows: 0fr 1fr 1fr 1fr 1fr;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: white;
+    
+}
+
+.trendingChild{
+    border-bottom: 1px solid #35a7ff;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* background-color: #35a7ff; */
+}
+
+.trending:before{
+    font-weight: 700;
+    content: "Trending";
+    position: relative;
+    margin-top: -40px;
+}
+
+.trendPfp{
+    height: 50px;
+    width: 50px;
+    /* background-color: blueviolet; */
+    border-radius: 50%;
+}
+
+.trendName p{
+    padding-left: 20px;
+}
+
+.trending1 .trendPfp{
+    background-image: url(pfp4.jpg);
+    background-size: cover;
+}
+
+.trending2 .trendPfp{
+    background-image: url(pfp1.jpg);
+    background-size: cover;
+}
+
+.trending3 .trendPfp{
+    background-image: url(pfp3.jpg);
+    background-size: cover;
+}
+
+.trending4 .trendPfp{
+    background-image: url(pfp2.jpg);
+    background-size: cover;
+}
+
+.trendingChild:hover{
+    scale: 1.01;
 }
